@@ -7,7 +7,7 @@ http://dreamsteep.com/component/docman/doc_download/3-the-english-open-word-list
 '''
 
 os.chdir('EOWL-v1.1.2/LF Delimited Format')
-with open('dictionary.txt','w') as f:
+with open('dictionary.txt', 'w') as f:
     files = os.listdir()
     files.sort()
     for path in files:
@@ -15,4 +15,3 @@ with open('dictionary.txt','w') as f:
             continue
         with open(path) as letter:
             f.write(''.join(letter.readlines()))
-

@@ -1,4 +1,8 @@
+# Compiled Python
 *.py[cod]
+
+# Gedit Temp
+*~
 
 # C extensions
 *.so

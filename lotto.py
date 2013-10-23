@@ -6,6 +6,7 @@ Lotto is a tax on those who can't do math where 5 numbers and a bonus number are
 Write a program that asks the user how many lines they would like and then generate that many random sets\
 '''
 
+
 def main():
     pass
 

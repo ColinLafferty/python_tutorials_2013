@@ -19,6 +19,7 @@ conversion they would like to perform.
 source:http://openbookproject.net/pybiblio/practice/\
 '''
 
+
 def fahrenheight_to_celcius(temp):
     '''\
     Take a Fahrenheight temperature and convert it to Celcius
@@ -28,8 +29,9 @@ def fahrenheight_to_celcius(temp):
     :returns: Celcius temperature
     :rtype: float\
     '''
-    return (5/9)*(temp-32)
-    
+    return (5 / 9) * (temp - 32)
+
+
 def celcius_to_fahrenheight(temp):
     '''\
     Take a Celcius temperature and convert it to Fahrenheight
@@ -39,20 +41,23 @@ def celcius_to_fahrenheight(temp):
     :returns: Fahrenheight temperature
     :rtype: float\
     '''
-    return (9/5)*temp+32
-    
+    return (9 / 5) * temp + 32
+
+
 def main():
     '''\
     Ask the user whether they would like to convert celcius to fahrenheight
     or fahrenheight to celcius. Then ask them for the temperature that they
     would like to convert\
     '''
-    conversion_type = input("Convert to (F)ahrenheight or (C)elcius: ").lower()[0]
+    conversion_type = input(
+        "Convert to (F)ahrenheight or (C)elcius: ").lower()[0]
     temp = float(input("Enter the temperature you would like to convert: "))
-    conversion_map = {"c": fahrenheight_to_celcius, "f": celcius_to_fahrenheight}
+    conversion_map = {"c": fahrenheight_to_celcius,
+                      "f": celcius_to_fahrenheight}
     converted_value = conversion_map[conversion_type](temp)
     print(converted_value)
     return converted_value
-    
+
 if __name__ == "__main__":
     main()

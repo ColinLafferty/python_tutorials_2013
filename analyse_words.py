@@ -28,8 +28,9 @@ def main():
     Ask the user for a text file then analyse it to see how many times each 
     word in the file is used\
     '''
-    
-    filename = input("enter the path to the file that you would like to analyse: ")
+
+    filename = input(
+        "enter the path to the file that you would like to analyse: ")
     counter = collections.Counter()
     with open(filename) as file:
         for line in file:
@@ -38,7 +39,6 @@ def main():
             counter.update(words)
     print(counter)
     return counter
-            
+
 if __name__ == "__main__":
     main()
-
